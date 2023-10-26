@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0A2647;
+    z-index:100;
+}
+
+nav ul {
+    width: 70vw;
+    display: flex;
+    padding: 0 60px;
+    justify-content: end;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: #888;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: white;
+}
+
+nav .titre {
+    font-size: 20px;
+    color: white;
+    margin-left: 40px;
+}
+
+
+#annonces-container {
+    box-sizing: border-box;
+    width: 100vw;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 30px 0 0 30px;
+    
+}
+#annonces {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#annonces .annonce-card {
+    height: 100%;
+    width: 100%;
+    margin-right: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    border: 2px solid #0A2647;
+}
+
+#annonces .image{
+    height: 100%;
+    width: 40%;    
+}
+#annonces .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#annonces .text {
+    box-sizing: border-box;
+    height: 100%;
+    width: 60%;
+    padding: 20px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
